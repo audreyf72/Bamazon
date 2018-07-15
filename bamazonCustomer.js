@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: " ",
+  password: "bootcamp2018",
   database: "bamazon_db"
 });
 
@@ -93,10 +93,9 @@ function askforQTY(product) {
     .then(function(val) {
       var quantity = parseInt(val.quantity);
 
-      //Check and confirm stock availablity
       if (quantity > product.stock_quantity) {
-        console.log("\nInsufficient quantity!");
-        start();
+        console.log("\nI'm sorry. We have " + product.stock_quantity + " " + product.product_name + "'s available at this time.");
+        buyAgain();
       }
       else {
         // Otherwise run makePurchase, give it the product information and desired quantity to purchase

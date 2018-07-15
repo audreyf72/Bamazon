@@ -15,19 +15,19 @@ primary key(item_id)
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUES 
-(1001, "Kids Lunchbox", "School Supplies", 19.99, 200);
+(1001, "Kids Lunchbox", "School Supplies", 19.99, 20);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES 
-("Self-Cooling Laptop Case", "Computer Accessories", 32.99, 150),
-("RayBan Sunglasses", "Fashion Accessories", 29.99, 250),
-("Ladies Wedge Sandal", "Women's Shoes", 49.99, 50),
-("Mens Board Shorts", "Mens Fashion", 59.99, 45),
-("Deluxe Dog Bed", "Pet Supplies", 35.99, 30),
-("Robot Vacuum", "Kitchen and Home", 49.99, 50),
+("Self-Cooling Laptop Case", "Computer Accessories", 32.99, 50),
+("RayBan Sunglasses", "Fashion Accessories", 29.99, 2),
+("Ladies Wedge Sandal", "Women's Shoes", 49.99, 5),
+("Mens Board Shorts", "Mens Fashion", 59.99, 15),
+("Deluxe Dog Bed", "Pet Supplies", 35.99, 10),
+("Robot Vacuum", "Kitchen and Home", 49.99, 15),
 ("Automated Shoe Rack", "Kitchen and Home", 169.99, 25),
-("90 inch OLED Smart TV", "Electronics", 4999.98, 20),
-("Bluetooth Earbuds", "Electronics", 49.99, 50);
+("90 inch OLED Smart TV", "Electronics", 4999.98, 0),
+("Bluetooth Earbuds", "Electronics", 49.99, 10);
 
 USE bamazon_db;
 
